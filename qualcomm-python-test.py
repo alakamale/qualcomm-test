@@ -17,9 +17,9 @@ class Anagrams:
 
     readCount = 5
 
-    def __init__(self,  file_name = 'qualcomm-test-words.txt'):
+    def __init__(self,  fileName = 'qualcomm-test-words.txt'):
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        file_path = os.path.join(script_dir, file_name)
+        filePath = os.path.join(script_dir, fileName)
 
         if not os.path.isfile(filePath):
             raise FileNotFoundError(f"File '{filePath}' not found.")
